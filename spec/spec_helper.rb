@@ -1,10 +1,8 @@
-
 require 'simplecov'
 SimpleCov.start
 
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
-
+require 'simplecov-cobertura'
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
