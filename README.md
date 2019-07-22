@@ -14,7 +14,7 @@ This is a **Ruby on Rails** application, with basic unit tests, for which covera
 
 ## Configuration
 
-This project is written in `Ruby 2.6.3` using `Rails 5.2.3`. Unit tests are written in the [RSpec Rails](https://github.com/rspec/rspec-rails) framework. Coverage reports are generated through the [SimpleCov](https://github.com/colszowka/simplecov) gem and formatted via the [SimpleCov-Cobertura](https://github.com/dashingrocket/simplecov-cobertura) gem which formats the SimpleCov report into a `coverage.xml` file that is easily consumed by Codecov.
+This project is written in `Ruby 2.6.3` using `Rails 5.2.3`. Unit tests are written in the [RSpec Rails](https://github.com/rspec/rspec-rails) framework. Coverage reports are generated through the [SimpleCov](https://github.com/colszowka/simplecov) gem and formatted via the [SimpleCov-Cobertura](https://github.com/dashingrocket/simplecov-cobertura) gem which converts the SimpleCov report into a `coverage.xml` file that is easily consumed by Codecov.
 
 Unit tests: `spec/index_spec.rb` which tests `lib/index.rb`
 
