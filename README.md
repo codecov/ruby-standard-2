@@ -1,6 +1,6 @@
 # Ruby-Standard-2 (Bash Uploader Edition)
 
-## TO-DO: Add build and coverage flags
+[![Build Status](https://travis-ci.org/codecov/Ruby-Standard-2.svg?branch=master)](https://travis-ci.org/codecov/Ruby-Standard-2) 
 
 ### Last Updated: never
 
