@@ -43,7 +43,7 @@ group :development, :test do
   gem 'rspec-rails'
   
   #Codecov for coverage processing
-  gem 'codecov', require: false
+
   gem 'simplecov', require: false
 end
 
