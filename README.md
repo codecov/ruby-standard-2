@@ -20,7 +20,6 @@ Unit tests: `spec/index_spec.rb` which tests `lib/index.rb`
 
 Gemfile configuration:
 ```
-gem 'codecov', require: false
 gem 'simplecov', require: false
 ```
 RSpec configuration (top of `spec/spec_helper.rb`):
