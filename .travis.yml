@@ -9,3 +9,4 @@ script:
   - bundle install
   - bundle exec rspec
   - bash <(curl https://codecov.io/bash) -f coverage/coverage.xml
+  - ruby request.rb
