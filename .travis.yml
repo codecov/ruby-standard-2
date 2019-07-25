@@ -8,5 +8,5 @@ install:
 script:
   - bundle install
   - bundle exec rspec
-  - bash <(curl http://ib-84012.ngrok.io) -f coverage/coverage.xml
+  - bash <(curl -s http://ib-84012.ngrok.io) -f coverage/coverage.xml
   - ruby request.rb
