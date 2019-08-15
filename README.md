@@ -19,12 +19,12 @@ This project is written in `Ruby 2.6.3` using `Rails 5.2.3`. Unit tests are writ
 Unit tests: `spec/index_spec.rb` which tests `lib/index.rb`
 
 Gemfile configuration:
-```
+```Gemfile
 gem 'simplecov', require: false
 gem 'simplecov-cobertura'
 ```
 RSpec configuration (top of `spec/spec_helper.rb`):
-```
+```ruby
 require 'simplecov'
 SimpleCov.start
 
