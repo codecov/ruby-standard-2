@@ -6,6 +6,7 @@ before_install:
 install:
   - gem install rails
 script:
+  - bundle update --bundler
   - bundle install
   - bundle exec rspec
   - bash <(curl -s https://codecov.io/bash) -f coverage/coverage.xml
