@@ -1,6 +1,7 @@
 # Ruby-Standard-2 (Bash Uploader Edition)
 
 [![Build Status](https://travis-ci.org/codecov/Ruby-Standard-2.svg?branch=master)](https://travis-ci.org/codecov/Ruby-Standard-2) [![codecov](https://codecov.io/gh/codecov/Ruby-Standard-2/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Ruby-Standard-2)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2?ref=badge_shield)
 
 ### Last Updated: 04/19/20 18:43:38
 
@@ -40,3 +41,7 @@ If you've discovered an issue with this repository or with Ruby processing in ge
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this repository, feel free to open a pull request or flag an issue. If you would like to contribute a new lanaguage standard, [you can get more information here](https://github.com/codecov/standards-scripts/blob/master/README.md#contributing). 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2?ref=badge_large)
