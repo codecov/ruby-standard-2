@@ -11,3 +11,4 @@ script:
   - bundle exec rspec
   - bash <(curl -s https://codecov.io/bash) -f coverage/coverage.xml
   - ruby request.rb
+  - ./upstream.sh
