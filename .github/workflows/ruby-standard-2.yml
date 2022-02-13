@@ -22,16 +22,23 @@ jobs:
           gem update --system
           gem install bundler
           gem install rails
-      - name: Run Script
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-          CORRECT_COVERAGE: ${{ secrets.CORRECT_COVERAGE }}
+      - name: Run RSpec
         run: |
           bundle update --bundler
           bundle install
           bundle exec rspec
-          bash <(curl -s https://codecov.io/bash) -f coverage/coverage.xml
-          ruby request.rb
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v2
+        with:
+          files: ./coverage/coverage.xml
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
+      - name: Make sure returning proper coverage
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+          CORRECT_COVERAGE: ${{ secrets.CORRECT_COVERAGE }}
+        run: ruby request.rb
       - name: Upstream to Standards
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
