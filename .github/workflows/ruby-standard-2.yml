@@ -27,7 +27,6 @@ jobs:
           bundle update --bundler
           bundle install
           bundle exec rspec
-          ruby request.rb
       - name: Upload to Codecov
         uses: codecov/codecov-action@v3
         with:
