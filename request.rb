@@ -7,8 +7,8 @@ puts "Codecov API Validation\n"
 
 # nap time
 def nap
-  puts "Waiting 60 seconds for report to upload before pinging API...\n"
-  sleep(60)
+  puts "Waiting 120 seconds for report to upload before pinging API...\n"
+  sleep(120)
 end
 
 def ping_api
