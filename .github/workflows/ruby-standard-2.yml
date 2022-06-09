@@ -22,7 +22,7 @@ jobs:
           gem update --system
           gem install bundler
           gem install rails
-      - name: Run Script
+      - name: Run RSpec
         run: |
           bundle update --bundler
           bundle install
