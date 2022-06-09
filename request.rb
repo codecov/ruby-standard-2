@@ -21,10 +21,10 @@ def ping_api
   to_json = JSON.parse(response_data)
 
   # get the commit data and coverage percentage
-  commit_data = to_json['commits'][0]
-  coverage_percentage = commit_data['totals']['c']
+  commit_data = to_json.dig('commits', 0)
+  coverage_percentage = commit_data.dig('totals', 'c')
 
-  # Coverage percentage should be 93.65079 (this is specfied via environment variables on Travis), fail build otherwise
+  # Coverage percentage should be 93.65079 (this is specfied via environment variables on GitHub), fail build otherwise
 
   if coverage_percentage == ENV['CORRECT_COVERAGE']
     puts "Success! Codecov's API returned the correct coverage percentage, #{ENV['CORRECT_COVERAGE']}"
