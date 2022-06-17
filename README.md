@@ -3,7 +3,7 @@
 [![Workflow for Ruby Standard 2 Action](https://github.com/codecov/ruby-standard-2/actions/workflows/ruby-standard-2.yml/badge.svg)](https://github.com/codecov/ruby-standard-2/actions/workflows/ruby-standard-2.yml) [![codecov](https://codecov.io/gh/codecov/Ruby-Standard-2/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Ruby-Standard-2)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2?ref=badge_shield)
 
-### Last Updated: 06/16/22 00:13:40
+### Last Updated: 06/17/22 00:13:20
 
 ## What is this?
 
