@@ -34,7 +34,7 @@ jobs:
       - name: Confirm upload
         env:
           API_KEY: ${{ secrets.API_KEY }}
-          CORRECT_COVERAGE: ${{ secrets.CORRECT_COVERAGE }}
+          CORRECT_COVERAGE: ${{ vars.CORRECT_COVERAGE }}
         run: |
           ruby request.rb
       - name: Upstream to Standards
