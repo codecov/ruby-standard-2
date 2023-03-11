@@ -32,8 +32,6 @@ def ping_api
   else
     puts 'Whoops, something is wrong D: Codecov did not return the correct coverage percentage.'
     puts "Coverage percentage should be #{ENV['CORRECT_COVERAGE']} but Codecov returned #{coverage_percentage}"
-    puts "ENV #{ENV['CORRECT_COVERAGE'].class}"
-    puts "coverage #{coverage_percentage.class}"
     exit 1
   end
 end
