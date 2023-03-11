@@ -26,7 +26,7 @@ def ping_api
 
   # Coverage percentage should be 93.65079 (this is specfied via environment variables on GitHub), fail build otherwise
 
-  if coverage_percentage == ENV['CORRECT_COVERAGE']
+  if coverage_percentage.to_s == ENV['CORRECT_COVERAGE']
     puts "Success! Codecov's API returned the correct coverage percentage, #{ENV['CORRECT_COVERAGE']}"
     exit 0
   else
