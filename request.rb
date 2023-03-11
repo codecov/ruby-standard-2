@@ -15,7 +15,7 @@ def ping_api
   puts "Pinging Codecov's API..\n"
 
   # REST call
-  response_data = RestClient.get('https://codecov.io/api/gh/codecov/Ruby-Standard-2', params: { token: ENV['API_KEY'] })
+  response_data = RestClient.get('https://api.codecov.io/api/v2/github/codecov/repos/Ruby-Standard-2', params: { token: ENV['API_KEY'] })
 
   # Parse request data to JSON format
   to_json = JSON.parse(response_data)
