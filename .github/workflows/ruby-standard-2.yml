@@ -26,7 +26,7 @@ jobs:
           bundle install
           bundle exec rspec
       - name: Upload to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v4-beta-beta-beta-beta
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
         with:
