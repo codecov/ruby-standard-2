@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.STANDARDS_TOKEN }}
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -39,7 +41,7 @@ jobs:
           ruby request.rb
       - name: Upstream to Standards
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.STANDARDS_TOKEN }}
           COVERAGE_SOURCE_FILE: ${{ secrets.COVERAGE_SOURCE_FILE }}
         if: ${{ github.event_name == 'push'}}
         run: |
