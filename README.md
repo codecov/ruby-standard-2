@@ -27,10 +27,11 @@ gem 'simplecov-cobertura'
 RSpec configuration (top of `spec/spec_helper.rb`):
 ```ruby
 require 'simplecov'
-SimpleCov.start
-
 require 'simplecov-cobertura'
-SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+if ENV['CI']
+  SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+end
+SimpleCov.start
 ```
 > `spec_helper.rb` is a file that contains settings specific to RSpec. If you're using another testing framework, you'll need to put this information in some other helper Ruby file. For example, if you're using Minitest, which is prepackaged with all Rails applications, you'll need to put the above lines of code inside `test/test_helper.rb`
 
