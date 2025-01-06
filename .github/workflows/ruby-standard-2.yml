@@ -39,6 +39,7 @@ jobs:
           CORRECT_COVERAGE: ${{ vars.CORRECT_COVERAGE }}
         run: |
           ruby request.rb
+
       - name: Upstream to Standards
         env:
           GH_TOKEN: ${{ secrets.STANDARDS_TOKEN }}
