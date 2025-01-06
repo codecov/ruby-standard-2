@@ -1,4 +1,4 @@
-# Ruby-Standard-2 (Bash Uploader Edition)
+# Ruby-Standard-2 (CLI Edition)
 
 [![Workflow for Ruby Standard 2 Action](https://github.com/codecov/ruby-standard-2/actions/workflows/ruby-standard-2.yml/badge.svg)](https://github.com/codecov/ruby-standard-2/actions/workflows/ruby-standard-2.yml) [![codecov](https://codecov.io/gh/codecov/Ruby-Standard-2/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Ruby-Standard-2)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fruby-standard-2?ref=badge_shield)
@@ -7,11 +7,11 @@
 
 ## What is this?
 
-This is a **Ruby on Rails** application, with basic unit tests, for which coverage is uploaded to Codecov on a daily basis via the Codecov Bash uploader. It can also serve as an example for how to integrate Codecov into your Ruby project. If the build is passing for this project, then Codecov's Ruby report processing is functional and correct on codecov.io.
+This is a **Ruby on Rails** application, with basic unit tests, for which coverage is uploaded to Codecov on a daily basis via the Codecov CLI. It can also serve as an example for how to integrate Codecov into your Ruby project. If the build is passing for this project, then Codecov's Ruby report processing is functional and correct on codecov.io.
 
 ## What's the difference between `Ruby-Standard-1` and `Ruby-Standard-2`?
 
-[Ruby-Standard-1](https://github.com/codecov/Ruby-Standard-1) uses the Codecov gem to process coverage reports, while this repository, Ruby-Standard-2, uses Codecov's bash uploader to process reports. Otherwise, everything is the same between these two repos.
+[Ruby-Standard-1](https://github.com/codecov/Ruby-Standard-1) uses the Codecov gem to process coverage reports, while this repository, Ruby-Standard-2, uses Codecov's CLI to process reports. Otherwise, everything is the same between these two repos.
 
 ## Configuration
 
